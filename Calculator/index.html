@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="calc">
+            <div class="screen" id="screen">00.0</div>
+            <div class="col">
+                <button onclick="clearBu()">C</button>
+                <button onclick="sevenBu()">7</button>
+                <button onclick="fourBu()">4</button>
+                <button onclick="oneBu()">1</button>
+                <button onclick="doubleBu()">00</button>
+            </div>
+            <div class="col">
+                <button onclick="divideBu()">/</button>
+                <button onclick="eightBu()">8</button>
+                <button onclick="fiveBu()">5</button>
+                <button onclick="twoBu()">2</button>
+                <button onclick="zeroBu()">0</button>
+            </div>
+            <div class="col">
+                <button onclick="multiplyBu()">*</button>
+                <button onclick="nineBu()">9</button>
+                <button onclick="sixBu()">6</button>
+                <button onclick="threeBu()">3</button>
+                <button onclick="pointBu()">•</button>
+            </div>
+            <div class="col" id="x">
+                <button onclick="deleteBu()">DEL</button>
+                <button onclick="subtractBu()">-</button>
+                <button onclick="addBu()">+</button>
+                <button id="equal" onclick="equalBu()">=</button>
+            </div>
+        </div>
+    </body>
+</html>
