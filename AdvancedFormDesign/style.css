@@ -1,0 +1,130 @@
+
+/*
+    • colors: [ #f9b937 , #7979f7, #a2a2f9 ]
+*/
+
+body{
+    background-color: #f0f0ff;
+}
+
+
+
+
+
+
+
+
+.signin-parent{
+    width: calc(100% - 40px); height: calc(100% - 40px); position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%); border-radius: 10px;
+}
+.signin-parent .left{
+    width: 50%; height: 100%; position: absolute; top: 0; left: 0;
+    background-color: white; border-radius: 10px; z-index: 10;
+    box-shadow: 0 3px 14px 0 #0808501f; transition: all 0.4s;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+.signin-parent .left img{ width: 220px; }
+.signin-parent .left h1{ font-size: 35px; font-family: sans-serif; color: #7979f7; }
+.signin-parent .left button{
+    width: 190px; height: 45px; border-radius: 6px;
+    border: 0; background-color: #7979f7;
+    color: white; font-size: 18px; cursor: pointer;
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: center; align-items: center;
+    transition: all 0.3s;
+}
+.signin-parent .left button:hover{
+    background-color: white; color: #7979f7;
+    box-shadow: 0 3px 12px 0 #0808501f;
+}
+.signin-parent .right{
+    width: 50%; height: 100%; position: absolute; top: 0; left: 0;
+    background-color: transparent; border-radius: 10px;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    transition: all 0.4s;
+}
+.signin-parent .right>div{
+    width: 100%; height: 100%; position: absolute; top: 0; left: 0;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+.signin-parent .right>div>h2{ font-size: 40px; font-family: sans-serif; color: #4545a4; }
+.signin-parent .right>div>div {
+    width: 90%; max-width: 400px; min-width: 320px; height: 60px; background-color: #fff;
+    margin: 10px; border-radius: 6px; position: relative;
+    box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.1);
+}
+.signin-parent .right>div>div input{
+    width: 100%; height: 100%; border: 0; border-radius: 6px;
+    position: absolute; top: 0; left: 0; padding: 0 10px 0 54px;
+    font-size: 18px; box-sizing: border-box;
+}
+.signin-parent .right>div>div ion-icon{
+    font-size: 30px; position: absolute; top: 50%; left: 14px;
+    transform: translate(0, -50%); z-index: 9; color: #7979f7;
+}
+.signin-parent .right>div>button{
+    width: 90%; max-width: 400px; min-width: 320px; height: 60px;
+    background-color: #7979f7; color: white; font-size: 18px;
+    margin: 10px; border-radius: 6px; position: relative;
+    box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.1);
+    border: 0; cursor: pointer; transition: all 0.3s;
+}
+.signin-parent .right>div>button:hover{
+    background-color: white; color: #7979f7;
+    box-shadow: 0 3px 12px 0 #0808501f;
+}
+.signin-parent .right>div>a{ cursor: pointer; color: #4545a4; font-family: sans-serif; margin: 15px 0; }
+
+.signin-parent .sign-up-right{
+    left: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+    .signin-parent{ width: calc(100% - 20px); height: calc(100% - 20px); }
+    .signin-parent .left{
+        width: 100%; height: 30%; padding: 40px 0; box-sizing: border-box;
+        background-color: transparent; box-shadow: 0 0 0 0;
+    }
+    .signin-parent .left img{ width: 130px; }
+    .signin-parent .left h1{ font-size: 30px; }
+    .signin-parent .left button{
+        position: fixed; bottom: 40px;
+    }
+    .signin-parent .right{
+        width: 100%; height: calc(65% - 65px); position: absolute; top: 28%;
+        background-color: white; box-shadow: 0 3px 14px 0 #0808501f;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        transition: all 0.4s;
+    }
+    .signin-parent .sign-up-right{
+        left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
