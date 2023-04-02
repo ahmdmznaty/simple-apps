@@ -1,0 +1,30 @@
+
+.popular-tags-section{
+    width: 100%; overflow: hidden; padding: 0 50px 30px 50px; margin-top: 10px;
+}
+
+.popular-tags-section .section-top{
+    width: 100%; height: 50px; padding: 0 2px;
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: space-between; align-items: flex-start;
+}
+.popular-tags-section .section-top h3{
+    font-size: 22px; font-weight: normal; color: #222;
+}
+
+.popular-tags-section .tags{
+    display: flex; flex-direction: row; flex-wrap: wrap;
+    justify-content: flex-start; align-items: center; gap: 15px;
+}
+.popular-tags-section .tags .tag-budge{
+    height: 40px; background-color: #e8e8e8; padding: 0 20px;
+    border-radius: 40px; color: #333; cursor: pointer; transition: all 0.3s;
+    display: flex; justify-content: center; align-items: center;
+}
+.popular-tags-section .tags .tag-budge:hover{ background-color: #d3d3d3; }
+
+
+
+
+
+

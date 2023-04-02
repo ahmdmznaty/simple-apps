@@ -1,0 +1,69 @@
+
+
+
+.header-section{
+    width: 100%; height: 400px;
+    overflow: hidden; padding: 30px 50px;
+}
+
+.header-section .section-top{
+    width: 100%; height: 50px; padding: 0 2px;
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: space-between; align-items: flex-start;
+}
+.header-section .section-top h3{
+    font-size: 22px; font-weight: normal; color: #222;
+}
+.header-section .section-top button{
+    width: 35px; height: 35px; background-color: var(--brand);
+    border: 0; border-radius: 50%; margin: 5px; color: white;
+    font-size: 22px; cursor: pointer; transition: all 0.3s;
+    display: inline-flex; justify-content: center; align-items: center;
+}
+.header-section .section-top button:hover{
+    background-color: #fff; color: var(--brand);
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header-section .carousel{
+    width: 100%; height: 320px;
+    position: relative;
+}
+.header-section .carousel .swiper-button-prev, .header-section .swiper-button-next{ visibility: hidden; }
+.header-section .carousel .swiper-pagination{ width: 50%; left: 50%; transform: translate(-50%, 0); }
+.header-section .carousel .swiper-pagination-bullet{ width: 10px; height: 10px; background-color: #fff; }
+.header-section .carousel img{
+    width: 100%; height: 100%; position: absolute; left: 0; top: 0;
+    object-fit: cover; object-position: center;
+    filter: brightness(70%) blur(2px);
+}
+.header-section .carousel h4{
+    color: white; font-size: 22px; font-weight: normal;
+    position: absolute; left: 50px; top: 50px; color: #eee;
+}
+.header-section .carousel p{
+    color: white; font-size: 13px; font-weight: lighter;
+    position: absolute; left: 55px; top: 80px; color: #eee;
+}
+.header-section .carousel button.swiper-close{
+    width: 40px; height: 40px; background-color: rgba(0, 0, 0, 0.465);
+    position: absolute; right: 25px; top: 25px; color: white; border: 0;
+    border-radius: 50%; font-size: 22px; cursor: pointer; transition: all 0.3s;
+    display: flex; justify-content: center; align-items: center;
+}
+.header-section .carousel button.swiper-close:hover{
+    transform: scale(1.05); background-color: rgba(0, 0, 0, 0.6);
+}
+.header-section .carousel button.watch-now{
+    width: 150px; height: 55px; background-color: rgba(0, 0, 0, 0.465);
+    position: absolute; right: 0; bottom: 0; color: white; border: 0;
+    font-size: 17px; cursor: pointer; transition: all 0.3s;
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: center; align-items: center; gap: 8px;
+    z-index: 11;
+}
+.header-section .carousel button.watch-now:hover{ background-color: rgba(0, 0, 0, 0.6); }
+.header-section .carousel button.watch-now ion-icon{ font-size: 23px; }
+
+
+
