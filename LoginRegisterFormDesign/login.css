@@ -1,0 +1,355 @@
+body
+{
+  margin: 0; padding: 0;
+}
+
+
+#container
+{
+  margin: 0; padding: 0;
+  width: 100%; height: 100%;
+  background-image: linear-gradient(45deg, rgb(55, 0, 255), rgb(255, 0, 76));
+  position: fixed;
+}
+
+#sign_form
+{
+  width: 400px; height: 540px;
+  font-family: sans-serif;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 3px solid rgba(255, 255, 255, 0.3); border-radius: 25px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+  position: relative; top: 50%; left: 72%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+#sign_form #go_sign_up
+{
+  width: 51%; height: 58px; padding-top: 5px;
+  position: absolute; top: -1%; left: -1%;
+  border: none;
+  background: none;
+  font-size: 24px; font-weight: bold; color: white;
+  z-index: 2;
+}
+#sign_form #go_sign_up:hover
+{
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+#sign_form #go_sign_up:focus
+{
+  outline: none;
+}
+#sign_form #go_sign_in
+{
+  width: 51%; height: 58px; padding-top: 5px;
+  position: absolute; top: -1%; right: -1%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 24px; font-weight: bold; color: white;
+  z-index: 2;
+}
+#sign_form #go_sign_in:hover
+{
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+#sign_form #go_sign_in:focus
+{
+  outline: none;
+}
+
+#sign_form #sign_up_screen
+{
+  width: 400px; height: 540px;
+  position: absolute; top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 1;
+}
+
+#sign_form #sign_up_screen h2
+{
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  position: absolute; top: 13%; left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#sign_form #sign_up_screen input
+{
+  border-radius: 30px;
+  width: 330px; height: 36px;
+  border: none;
+  margin: 5px;
+  text-align: center; font-size: 18px;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.6);
+}
+#sign_form #sign_up_screen input:focus
+{
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: none;
+}
+
+#sign_form #sign_up_screen #sign_up_first_name
+{
+  width: 150px;
+  position: absolute; top: 30%; left: 12%;
+  transform: translate(-10%, 0);
+}
+
+#sign_form #sign_up_screen #sign_up_last_name
+{
+  width: 150px;
+  position: absolute; top: 30%; right: 10%;
+  transform: translate(10%, 0);
+}
+#sign_form #sign_up_screen #sign_up_email
+{
+  position: absolute; top: 41%; left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#sign_form #sign_up_screen #sign_up_password
+{
+  position: absolute; top: 52%; left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#sign_form #sign_up_screen #sign_up_conf_password
+{
+  position: absolute; top: 63%; left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#sign_form #sign_up_screen #terms_acception
+{
+  position: absolute; top: 74%; left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#sign_form #sign_up_screen #terms_acception input[type="checkbox"]
+{
+  width: 20px; height: 20px;
+  cursor: pointer;
+}
+
+#sign_form #sign_up_screen #terms_acception label
+{
+  width: 200px; height: 20px;
+  color: white;
+}
+#sign_form #sign_up_screen #terms_acception label a:focus
+{
+  outline: none;
+  opacity: 0.6;
+}
+
+#sign_form #sign_up_screen #sign_up_button
+{
+  position: absolute; top: 83%; left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 24px; font-style: normal; font-weight: bold;
+  background: linear-gradient(210deg, rgb(55, 0, 255), rgb(255, 0, 76));
+  color: white;
+}
+#sign_form #sign_up_screen #sign_up_button:hover
+{
+  font-size: 24.5px;
+  width: 330px; height: 39px;
+  background: linear-gradient(30deg, rgb(55, 0, 255), rgb(255, 0, 76));
+  cursor: pointer;
+}
+#sign_form #sign_up_screen #sign_up_button:focus
+{
+  background: linear-gradient(30deg, rgb(55, 0, 255), rgb(255, 0, 76));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sign_form #sign_in_screen
+{
+  width: 400px; height: 540px;
+  position: absolute; top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 1;
+}
+
+#sign_form #sign_in_screen input
+{
+  border-radius: 30px;
+  width: 330px; height: 36px;
+  border: none;
+  margin: 5px;
+  text-align: center; font-size: 18px;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.6);
+  background-color: white;
+}
+#sign_form #sign_in_screen input:focus
+{
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#sign_form #sign_in_screen h2
+{
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  position: absolute; top: 23%; left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#sign_form #sign_in_screen #sign_in_email
+{
+  position: absolute; top: 40%; left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#sign_form #sign_in_screen #sign_in_password
+{
+  position: absolute; top: 51%; left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#sign_form #sign_in_screen #sign_in_button
+{
+  position: absolute; top: 64%; left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 24px; font-style: normal; font-weight: bold;
+  background: linear-gradient(210deg, rgb(55, 0, 255), rgb(255, 0, 76));
+  color: white;
+}
+#sign_form #sign_in_screen #sign_in_button:hover
+{
+  font-size: 24.5px;
+  width: 330px; height: 39px;
+  background: linear-gradient(30deg, rgb(55, 0, 255), rgb(255, 0, 76));
+  cursor: pointer;
+}
+#sign_form #sign_in_screen #sign_in_button:focus
+{
+  outline: none;
+  background: linear-gradient(30deg, rgb(55, 0, 255), rgb(255, 0, 76));
+}
+
+#sign_form #sign_in_screen #sign_in_forget_password a
+{
+  position: absolute; top: 74%; left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 15px; font-style: normal;
+  color: white;
+}
+#sign_form #sign_in_screen #sign_in_forget_password a:focus
+{
+  outline: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+#sign_form #sign_in_screen #sign_in_forget_password a:hover
+{
+  outline: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#page_logo
+{
+  width: 520px;
+  position: absolute; top: 50%; left: 27%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes sign_up_disappear {
+  from {left: 50%;}
+  to {left: -50%;}
+}
+@keyframes sign_up_appear {
+  from {left: -50%;}
+  to {left: 50%;}
+}
+
+@keyframes sign_in_disappear {
+  from {left: 50%;}
+  to {left: 150%;}
+}
+@keyframes sign_in_appear {
+  from {left: 150%;}
+  to {left: 50%;}
+}

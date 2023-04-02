@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login Screen</title>
+  <link rel="stylesheet" href="login.css"/>
+</head>
+<body>
+  <div id="container">
+    <form id="sign_form">
+      <button id="go_sign_up" onclick="return go_sign_up_screen()">SIGN UP</button>
+      <button id="go_sign_in" onclick="return go_sign_in_screen()">SIGN IN</button>
+      <!---------------------------------------------------------------------------->
+      <div id="sign_up_screen">
+        <h2 id="sign_up_head">SIGN UP</h2>
+        <input type="text" placeholder="first name" id="sign_up_first_name"/>
+        <input type="text" placeholder="last name" id="sign_up_last_name"/>
+        <input type="email" placeholder="email" id="sign_up_email"/>
+        <input type="password" placeholder="password" id="sign_up_password"/>
+        <input type="password" placeholder="confirm password" id="sign_up_conf_password"/>
+        <span id="terms_acception">
+          <input type="checkbox" id="terms_check"/>
+          <label>
+            I accept 
+            <a href="#" style="color: rgb(28, 28, 192); text-decoration: none;">
+            The Terms
+            </a>
+          </label>
+        </span>
+        <input type="submit" value="SIGN UP" id="sign_up_button"/>
+      </div>
+      <!---------------------------------------------------------------------------->
+      <!---------------------------------------------------------------------------->
+      <div id="sign_in_screen">
+        <h2 id="sign_in_head">SIGN IN</h2>
+        <input type="email" placeholder="email" id="sign_in_email"/>
+        <input type="password" placeholder="password" id="sign_in_password"/>
+        <input type="submit" value="SIGN IN" id="sign_in_button"/>
+        <span id="sign_in_forget_password">
+          <a href="#" style="text-decoration: none;">
+            Forget Your password?
+          </a>
+        </span>
+      </div>
+      <!---------------------------------------------------------------------------->
+    </form>
+  </div>
+
+  <img src="logo.png" alt="our logo" id="page_logo"/>
+
+  <script src="login.js"></script>
+</body>
+</html>
