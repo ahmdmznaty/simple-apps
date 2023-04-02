@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="nav">
+        <img src="logo.png">
+        <div class="nav-center">
+            <ion-icon class="general-icons active" name="grid"></ion-icon>
+            <ion-icon class="general-icons" name="calendar"></ion-icon>
+            <ion-icon class="general-icons" name="chatbubble-ellipses"></ion-icon>
+            <ion-icon class="general-icons" name="videocam"></ion-icon>
+            <ion-icon class="general-icons" name="folder-open"></ion-icon>
+        </div>
+        <div></div>
+    </div>
+
+
+    <div class="body">
+        <div class="body-left">
+            <div class="top">
+                <div class="mydate"> </div>
+                <div class="search">
+                    <ion-icon name="search"></ion-icon>
+                    <input type="text" placeholder="Searching for...">
+                </div>
+            </div>
+            <div class="center-div">
+                <div class="leader-board">
+                    <div class="leader-board-top">
+                        <h2>Leader Board</h2>
+                        <p>English <ion-icon style="position: relative; top: 4px;" name="chevron-down"></ion-icon></p>
+                    </div>
+                    <table class="leader-board-table">
+                        <tr>
+                            <th colspan="2">Name</th>
+                            <th>Rank</th>
+                            <th>Score</th>
+                        </tr>
+                        <tr>
+                            <td> <img style="width: 50px; border-radius: 50%;" src="https://images.unsplash.com/photo-1565464027194-7957a2295fb7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80"> </td>
+                            <td> Ahmed Zanaty </td>
+                            <td><ion-icon style="font-size: 13px; color: grey;" name="caret-up"></ion-icon> 1</td>
+                            <td>198</td>
+                        </tr>
+                        <tr>
+                            <td> <img style="width: 50px; border-radius: 50%;" src="https://images.unsplash.com/photo-1584999734482-0361aecad844?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80"> </td>
+                            <td> Eslam Khamees </td>
+                            <td><ion-icon style="font-size: 13px; color: grey;" name="caret-up"></ion-icon> 1</td>
+                            <td>189</td>
+                        </tr>
+                        <tr>
+                            <td> <img style="width: 50px; border-radius: 50%;" src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80"> </td>
+                            <td> Abdo Awad </td>
+                            <td><ion-icon style="font-size: 13px;" name="caret-down"></ion-icon> 1</td>
+                            <td>187</td>
+                        </tr>
+                        <tr class="row-up-line">
+                            <td> <img style="width: 50px; border-radius: 50%;" src="https://images.unsplash.com/photo-1618077360395-f3068be8e001?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80"> </td>
+                            <td> Alaa Mohamed </td>
+                            <td><ion-icon style="font-size: 13px; color: grey;" name="caret-up"></ion-icon> 1</td>
+                            <td>161</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="goals">
+                    <div class="goals-top">
+                        <h2>Goals</h2>
+                        <p>Weekly <ion-icon style="position: relative; top: 4px;" name="chevron-down"></ion-icon></p>
+                    </div>
+                    <div class="goals-body">
+                        <div class="chart"></div>
+                        <div style="position: relative; top: 12px; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center;">
+                            <div style="position: relative; right: 10px;"><ion-icon style="position: relative; top: 2px; color: lightblue;" name="square"></ion-icon> Completed</div>
+                            <div style="position: relative; left: 10px;"><ion-icon style="position: relative; top: 2px; color: rgb(8, 0, 58);" name="square"></ion-icon> Failed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-div">
+                <div class="upcoming-tasks">
+                    <div class="upcoming-tasks-top">
+                        <h2>Upcoming Tasks</h2>
+                        <div>
+                            <ion-icon style="width: 35px; height: 35px; display: block; background-color: #fff; border-radius: 5px; padding: 3px;" name="filter"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="upcoming-tasks-body">
+                        <div class="upcoming-task">
+                            <ion-icon style="width: 45px; height: 45px; padding: 10px; border-radius: 12px; display: block; background-color: lightblue; color:#121212;" name="chatbubbles"></ion-icon>
+                            <h3 style="font-size: 22px;">Literature - <span style="font-weight: normal;">Discussion</span></h3>
+                            <span style="margin: 0px 15px 0px 15px; font-size: 18px; color: grey;">6:00</span>
+                            <span style="font-size: 18px; color: grey;">20 Oct, 2020</span>
+                            <ion-icon style="cursor: pointer; margin: 0px 15px 0px 15px; font-size: 30px; color: grey;" name="ellipsis-horizontal"></ion-icon>
+                        </div>
+                        <div class="upcoming-task">
+                            <ion-icon style="width: 45px; height: 45px; padding: 10px; border-radius: 12px; display: block; background-color: lightblue; color:#121212;" name="brush"></ion-icon>
+                            <h3 style="font-size: 22px;">Literature - <span style="font-weight: normal;">Discussion</span></h3>
+                            <span style="margin: 0px 15px 0px 15px; font-size: 18px; color: grey;">6:00</span>
+                            <span style="font-size: 18px; color: grey;">20 Oct, 2020</span>
+                            <ion-icon style="cursor: pointer; margin: 0px 15px 0px 15px; font-size: 30px; color: grey;" name="ellipsis-horizontal"></ion-icon>
+                        </div>
+                        <div class="upcoming-task">
+                            <ion-icon style="width: 45px; height: 45px; padding: 10px; border-radius: 12px; display: block; background-color: lightblue; color:#121212;" name="cloudy-night"></ion-icon>
+                            <h3 style="font-size: 22px;">Literature - <span style="font-weight: normal;">Discussion</span></h3>
+                            <span style="margin: 0px 15px 0px 15px; font-size: 18px; color: grey;">6:00</span>
+                            <span style="font-size: 18px; color: grey;">20 Oct, 2020</span>
+                            <ion-icon style="cursor: pointer; margin: 0px 15px 0px 15px; font-size: 30px; color: grey;" name="ellipsis-horizontal"></ion-icon>
+                        </div>
+                        <div class="upcoming-task">
+                            <ion-icon style="width: 45px; height: 45px; padding: 10px; border-radius: 12px; display: block; background-color: lightblue; color:#121212;" name="easel"></ion-icon>
+                            <h3 style="font-size: 22px;">Literature - <span style="font-weight: normal;">Discussion</span></h3>
+                            <span style="margin: 0px 15px 0px 15px; font-size: 18px; color: grey;">6:00</span>
+                            <span style="font-size: 18px; color: grey;">20 Oct, 2020</span>
+                            <ion-icon style="cursor: pointer; margin: 0px 15px 0px 15px; font-size: 30px; color: grey;" name="ellipsis-horizontal"></ion-icon>
+                        </div>
+                        <div class="upcoming-task">
+                            <ion-icon style="width: 45px; height: 45px; padding: 10px; border-radius: 12px; display: block; background-color: lightblue; color:#121212;" name="bug"></ion-icon>
+                            <h3 style="font-size: 22px;">Literature - <span style="font-weight: normal;">Discussion</span></h3>
+                            <span style="margin: 0px 15px 0px 15px; font-size: 18px; color: grey;">6:00</span>
+                            <span style="font-size: 18px; color: grey;">20 Oct, 2020</span>
+                            <ion-icon style="cursor: pointer; margin: 0px 15px 0px 15px; font-size: 30px; color: grey;" name="ellipsis-horizontal"></ion-icon>
+                        </div>
+                        <div class="upcoming-task">
+                            <ion-icon style="width: 45px; height: 45px; padding: 10px; border-radius: 12px; display: block; background-color: lightblue; color:#121212;" name="briefcase"></ion-icon>
+                            <h3 style="font-size: 22px;">Literature - <span style="font-weight: normal;">Discussion</span></h3>
+                            <span style="margin: 0px 15px 0px 15px; font-size: 18px; color: grey;">6:00</span>
+                            <span style="font-size: 18px; color: grey;">20 Oct, 2020</span>
+                            <ion-icon style="cursor: pointer; margin: 0px 15px 0px 15px; font-size: 30px; color: grey;" name="ellipsis-horizontal"></ion-icon>
+                        </div>
+                        <div class="upcoming-task">
+                            <ion-icon style="width: 45px; height: 45px; padding: 10px; border-radius: 12px; display: block; background-color: lightblue; color:#121212;" name="cafe"></ion-icon>
+                            <h3 style="font-size: 22px;">Literature - <span style="font-weight: normal;">Discussion</span></h3>
+                            <span style="margin: 0px 15px 0px 15px; font-size: 18px; color: grey;">6:00</span>
+                            <span style="font-size: 18px; color: grey;">20 Oct, 2020</span>
+                            <ion-icon style="cursor: pointer; margin: 0px 15px 0px 15px; font-size: 30px; color: grey;" name="ellipsis-horizontal"></ion-icon>
+                        </div>
+                        <div class="upcoming-task">
+                            <ion-icon style="width: 45px; height: 45px; padding: 10px; border-radius: 12px; display: block; background-color: lightblue; color:#121212;" name="construct"></ion-icon>
+                            <h3 style="font-size: 22px;">Literature - <span style="font-weight: normal;">Discussion</span></h3>
+                            <span style="margin: 0px 15px 0px 15px; font-size: 18px; color: grey;">6:00</span>
+                            <span style="font-size: 18px; color: grey;">20 Oct, 2020</span>
+                            <ion-icon style="cursor: pointer; margin: 0px 15px 0px 15px; font-size: 30px; color: grey;" name="ellipsis-horizontal"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body-right">
+            <div class="profile">
+                <img style="width: 50px; aspect-ratio: 1/1; border-radius: 50%; object-fit: cover;" src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1471&q=80">
+                <span>Ahmed Zanaty</span>
+                <ion-icon style="font-size: 30px;" name="notifications-outline"></ion-icon>
+            </div>
+            <h2>Daily Schedule</h2>
+            <div class="right-blocks">
+                <div class="right-block">
+                    <img src="dictionary.png">
+                    <div> <h3>English</h3> <p>Lecture - Class</p> </div>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+                <div class="right-block">
+                    <img src="eng.png">
+                    <div> <h3>English</h3> <p>Lecture - Class</p> </div>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+                <div class="right-block">
+                    <img src="geometry.png">
+                    <div> <h3>English</h3> <p>Lecture - Class</p> </div>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+                <div class="right-block">
+                    <img src="relativity.png">
+                    <div> <h3>English</h3> <p>Lecture - Class</p> </div>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+                <div class="right-block">
+                    <img src="chemistry.png">
+                    <div> <h3>English</h3> <p>Lecture - Class</p> </div>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <ion-icon id="openside" name="menu" class=" general-icon" onclick="openSide()"></ion-icon>
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
