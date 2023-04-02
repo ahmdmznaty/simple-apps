@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="index.css">
+  <title>Smarix Website</title>
+</head>
+<body style="font-family: sans-serif;" onscroll="scrolling()">
+
+  <div class="nav">
+    <div class="logo">
+      <h1>Smarix</h1>
+    </div>
+    <div class="nav_buttons" id="nav_buttons">
+      <a href="#" class="item_bu"><li>Home</li></a>
+      <a href="#" class="item_bu"><li>Services</li></a>
+      <a href="#" class="item_bu"><li>Portfolio</li></a>
+      <a href="#" class="item_bu"><li>About us</li></a>
+      <a href="#" class="item_bu"><li>Contact</li></a>
+    </div>
+    <div class="nav_open_button" onclick="openClose()">
+      <div class="nav_open" id="nav_open_close"></div>
+    </div>
+  </div>
+  <div class="header">
+    <div class="content1" id="content1">
+      <h2>Programming Services</h2>
+      <p>We provide you a great programming services for all platforms.</p>
+      <a href="#"><button>Discover</button></a>
+    </div>
+    <div class="content2" id="content2">
+      <h2>Design Services</h2>
+      <p>We provide you a great graphic and motion graphic design services.</p>
+      <a href="#"><button>Discover</button></a>
+    </div>
+    <div class="content3" id="content3">
+      <h2>Writing Services</h2>
+      <p>We provide you a great hand and digital writing services.</p>
+      <a href="#"><button>Discover</button></a>
+    </div>
+    <div class="header_nav">
+      <button class="bu bu1 active" id="bu1" onclick="header_one()">1</button>
+      <button class="bu bu2" id="bu2" onclick="header_two()">2</button>
+      <button class="bu bu3" id="bu3" onclick="header_three()">3</button>
+    </div>
+  </div>
+  <div class="about">
+    <div class="about_vector">
+      <img src="media/about.png">
+    </div>
+    <div class="about_content">
+      <h3>Who we are..</h3>
+      <p>
+        We are a bunch of computer masters.<br>
+        Computer scientists, Software Engineers, Graphic designers, Montainers, motion designers, Film makers, and Writers.
+      </p>
+    </div>
+  </div>
+  <div class="portfolio">
+    <div class="field">
+      <img src="media/programming.svg">
+      <br><span>Programming</span>
+    </div>
+    <div class="field">
+      <img src="media/design.svg">
+      <br><span>Design</span>
+    </div>
+    <div class="field">
+      <img src="media/writing.svg">
+      <br><span>Writing</span>
+    </div>
+  </div>
+  <div class="reviews">
+    <div class="feedback feedback1">
+      <div>
+        <img class="per" src="media/per1.jpg">
+        <h4>Adam Foad</h4>
+        <p>
+          <q>These guys are awesome, and I will let them do all my works.</q>
+        </p>
+        <img class="rate" src="media/rating1.svg">
+      </div>
+    </div>
+    <div class="feedback feedback2">
+      <div>
+        <img class="per" src="media/per4.jpg">
+        <h4>Nada Karem</h4>
+        <p>
+          <q>I really will not find company like this to do my designs.</q>
+        </p>
+        <img class="rate" src="media/rating2.svg">
+      </div>
+    </div>
+  </div>
+  <div class="contact">
+    <div class="info">
+      <h5>Smarix</h5>
+      <a href="tel:+201100134340">
+        <img src="media/contact/phone.svg">
+      </a>
+      <a href="https://wa.me/201100134340">
+        <img src="media/contact/whatsapp.svg">
+      </a>
+      <a href="mailto:ahmd53mhmd@gmail.com">
+        <img src="media/contact/mail.svg">
+      </a>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428.97024511906!2d30.068948417901982!3d30.66883084111828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145f555e6c543495%3A0xc7b3497c47834264!2z2YXZg9iq2KjYqSDYr9mH2Kg!5e0!3m2!1sen!2seg!4v1619681657494!5m2!1sen!2seg" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+
+
+
+  <script src="index.js"></script>
+</body>
+</html>
