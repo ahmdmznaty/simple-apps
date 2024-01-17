@@ -1,0 +1,102 @@
+/* ••••••••••••••••••••••••••••••••••••••••••••••••• */
+/* •••••••••• The main popularDist styles •••••••••• */
+/* ••••••••••••••••••••••••••••••••••••••••••••••••• */
+.popularDist{
+    width: calc(100% - 80px); padding: 50px 0;
+    position: relative; left: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+.popDistCarde{
+    min-width: 260px; height: 320px;
+    box-shadow: 0 5px 14px 0 rgba(0, 44, 114, 0.3);
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    padding-top: 8px;
+    position: relative;
+}
+.popDistCarde img{
+    width:  244px;
+    height: 180px;
+    border-radius: 9px;
+}
+.popDistCarde .deteals{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+.popDistCarde .deteals h2{
+    text-align: center;
+    font-size: 22px;
+    font-family: webket;
+}
+.popDistCarde .deteals p{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+    font-family: webket;
+    color: hsl(0deg 0% 78%);
+    margin-top: 5px;
+}
+.popDistCarde .rate{
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.popDistCarde .rate .golde{
+    color:hsl(40deg 95% 55%);
+}
+.popDistCarde .rate .star{
+    color: hsl(0deg 0% 78%);
+}
+.popDistCarde .deteals .adress{
+
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 12px;
+    font-family: webket;
+    color: hsl(0deg 0% 78%);
+    margin-top: 5px;
+}
+.popDistCarde .heart{
+    width:  22px;
+    height: 22px;
+    background-color: white;
+    box-shadow: 0 5px 14px 0 rgba(0, 2, 6, 0.3);
+    position: absolute;
+    top:   11px;
+    right: 11px;
+    text-align: center;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popDistCarde .heart .blackHeart{
+    font-size: 15px;
+    color:  rgb(169, 168, 168);
+}
+.popDistCarde .heart .active{
+    color: #1878fc;
+}

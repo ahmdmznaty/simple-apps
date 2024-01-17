@@ -1,0 +1,118 @@
+
+body{
+    background-color: #eee;
+}
+*{
+    user-select: none;
+}
+
+
+
+.toggle{
+    width: 320px; height: 70px;
+    background-color: white;
+    border-radius: 8px; cursor: pointer;
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 100px auto;
+}
+.toggle .arrow{
+    height: 14px; position: absolute; right: 20px;
+    top: calc(50% - 7px);
+    z-index: 20;
+    transition: all 0.3s;
+}
+
+
+.toggle .others{
+    width: 100%; background-color: white;
+    border-radius: 8px; height: 420px;
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.2);
+    position: absolute; top: 108%;
+    transition: height 0.3s, top 0.3s; overflow: hidden;
+}
+.toggle .default{
+    position: relative; z-index: 12;
+    background-color: white; border-radius: 8px;
+}
+.toggle .option, .toggle .default{
+    width: 100%; height: 70px; padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex; flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.3s;
+    border-bottom: 1px solid #eee;
+}
+.toggle .option:hover{
+    background-color: #eee;
+}
+.toggle .last, .toggle .default{ border-bottom: 0; }
+
+.toggle .option img, .toggle .default img{
+    width: 45px; margin-right: 10px;
+}
+.toggle .option span, .toggle .default span{
+    font-size: 18px; font-family: sans-serif;
+}
+.toggle .others .active{
+    background-color: #ccc; opacity: 0.6;
+}
+
+
+
+
+
+.toggle .closed{
+    top: 0;
+    height: 70px;
+    box-shadow: 0 0 0 0;
+}
+.toggle .closed .option{
+    display: none; height: 0;
+}
+.toggle .closed .active{
+    height: 70px;
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    border-bottom: 0;
+    position: absolute; top: 0;
+    z-index: 10;
+    opacity: 1;
+}
+.toggle .closed .option:hover{
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

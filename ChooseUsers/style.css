@@ -1,0 +1,106 @@
+
+
+body{
+    background-color: rgb(245, 245, 245); padding: 110px 200px; overflow: hidden;
+}
+*{ margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+
+.top{
+    width: 100%; height: 150px;
+    display: flex; flex-direction: row;
+    flex-wrap: nowrap; justify-content: space-between;
+    align-items: center;
+}
+.top div h1{
+    font-weight: lighter; font-size: 40px;
+}
+.top div p{
+    font-weight: lighter; color: #777; font-size: 20px;
+}
+.top button{
+    width: 180px; height: 50px; background-color: transparent;
+    border: 2px solid rgb(212, 0, 255); font-size: 18px;
+    border-radius: 50px; cursor: pointer; transition: all 0.2s;
+}
+.top button:hover{
+    background-color: rgb(212, 0, 255); color: white;
+}
+
+
+
+
+.middle{
+    width: 100%; height: 300px;
+    display: flex; flex-direction: row;
+    flex-wrap: wrap; justify-content: space-between;
+    align-items: center;
+}
+.middle .card{
+    width: 300px; height: 100px;
+    background-color: white; margin: 10px;
+    outline: 1px solid rgba(212, 0, 255, 0.15);
+    border-radius: 5px; position: relative;
+    cursor: pointer; transition: all 0.2s;
+}
+.middle .card:hover{box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.1);}
+
+.middle .card>img{
+    width: 70px; border-radius: 4px;
+    position: absolute; left: 15px; top: 50%;
+    transform: translate(0, -50%);
+}
+.middle .card .details{
+    width: calc(100% - 100px);
+    position: absolute; right: 0; top: 50%;
+    transform: translate(0, -50%);
+}
+.middle .card .details h2{font-weight: lighter;}
+.middle .card .details p{font-weight: lighter; color: #888;}
+.middle .card .check{
+    width: 30px; height: 30px;
+    background-color: rgb(212, 0, 255);
+    border-radius: 50%; display: none;
+    flex-direction: row; justify-content: center;
+    align-items: center;
+    position: absolute; right: -16px; top: -16px;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.4);
+}
+.middle .card .check img{
+    width: 30px; filter: invert(1);
+}
+
+.middle .checked{
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2); outline: 0;
+}
+.middle .checked:hover{
+    box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.3);
+}
+.middle .checked .check{ display: flex; }
+
+
+
+
+.bottom{
+    width: 100%; height: 100px;
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: flex-end; align-items: center;
+}
+.bottom button{
+    width: 220px; height: 60px; background-color: rgb(212, 0, 255);
+    font-size: 20px; margin-left: 30px; border: 0; color: white;
+    border-radius: 50px; cursor: pointer; transition: all 0.2s;
+}
+.bottom button:hover{
+    background-color: white; color: rgb(212, 0, 255);
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.1);
+}
+.bottom p{ font-size: 23px; font-weight: lighter; color: #555; }
+.bottom span{ font-size: 28px; color: rgb(212, 0, 255); }
+
+
+
+
+
+
+
+

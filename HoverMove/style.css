@@ -1,0 +1,28 @@
+
+*{
+    padding: 0; margin: 0; font-family: sans-serif;
+}
+
+body{
+    width: 100vw; height: 100vh; background-color: #eee;
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: center; align-items: center;
+}
+
+.parent{
+    width: 420px; height: 280px; background-color: #3d4258; overflow: hidden;
+    color: white; font-size: 36px; letter-spacing: 3px; text-align: center;
+    display: flex; flex-direction: column; flex-wrap: nowrap; cursor: row-resize;
+    justify-content: center; align-items: center; position: relative;
+}
+.parent::before{
+    content: ""; width: 100%; height: 100%;
+    background-color: transparent; z-index: 10;
+    position: absolute; left: 0; top: 0;
+}
+
+.parent .cover{
+    width: 100%; height: 100%; background-color: rgba(255, 132, 0, 0.65);
+    backdrop-filter: blur(8px); transition: all 0.1s;
+    position: absolute; left: 0; top: calc(50% - 280px); z-index: 9;
+}

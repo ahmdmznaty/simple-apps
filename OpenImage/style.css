@@ -1,0 +1,36 @@
+
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    width: 600px; height: 600px; overflow: hidden;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex; flex-flow: row wrap; gap: 0px;
+    justify-content: center; align-items: center;
+}
+.parent label{
+    width: calc(100% / 3); height: calc(100% / 3);
+    outline: 8px solid white;
+}
+.parent label input{ display: none; }
+.parent label img{
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center;
+    transition: all 0.3s;
+}
+.parent label input:checked + img{ transform: scale(3); }
+.parent label.one img{ transform-origin: 0% 0%; }
+.parent label.two img{ transform-origin: 50% 0%; }
+.parent label.three img{ transform-origin: 100% 0%; }
+.parent label.four img{ transform-origin: 0% 50%; }
+.parent label.five img{ transform-origin: 50% 50%; }
+.parent label.six img{ transform-origin: 100% 50%; }
+.parent label.seven img{ transform-origin: 0% 100%; }
+.parent label.eight img{ transform-origin: 50% 100%; }
+.parent label.nine img{ transform-origin: 100% 100%; }
+
+
+

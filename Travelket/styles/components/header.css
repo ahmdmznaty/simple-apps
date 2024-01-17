@@ -1,0 +1,90 @@
+/* •••••••••••••••••••••••••••••••••••••••••••••••• */
+/* •••••••••••• The main header styles •••••••••••• */
+/* •••••••••••••••••••••••••••••••••••••••••••••••• */
+.header{
+    width: calc(100% - 80px); height: 350px;
+    background-image: url('../../media/back\ 2.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative; left: 80px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.header img{
+    width:  100px;
+    height: 100px;
+    position: relative;
+    top: 11px;
+}
+.header  .travel{
+    font-family: webket;
+    font-size: 62px;
+    color: white;
+}
+.header  .ket{
+    font-family: webket;
+    font-size: 62px;
+    color:  hsl(218deg 92% 53%);
+}
+.header .input {
+    width: 330px;
+    height: 45px;
+    margin-top: 10px;
+    
+}
+.header .input {
+    position: relative;
+}
+.header .input input{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 0;
+    margin: 0;
+    font-size: 16px;
+    border-radius: 25px;
+    padding-left:30px ;
+    position: relative;
+    z-index: 90;
+}
+.header .input input:focus{
+    outline: 0;
+}
+.header .input .searsh{
+    font-size: 18px;
+    position: absolute;
+    top: 30%;
+    /* bottom: 31%; */
+    left: 12px;
+    z-index: 90;
+    color: rgba(0, 0, 0, 0.491);
+}
+
+.header .input button{
+    width: 90px;
+    min-width: 90px;
+    height: 90%;
+    font-size: 14px;
+    position: absolute;
+    top: 5%;
+    right: 2px;
+    z-index: 90;
+    color: white;
+    background-color: hsl(218deg 92% 53%) ;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid  hsl(218deg 92% 53%) ;
+}
+.header .input button:hover{
+    color: black;
+    background-color: white;
+
+}
+

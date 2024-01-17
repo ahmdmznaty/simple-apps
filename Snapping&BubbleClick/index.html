@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Snapping & BubbleClick</title>
+</head>
+<body>
+    <div class="header">
+        <h1>webket</h1>
+        <p>welcome in our website</p>
+        <button onclick="godown()">Learn more</button>
+        <script>
+            function godown() {
+                window.scrollBy({
+                    top: 100, left: 0,
+                    behavior: "smooth"
+                })
+            }
+        </script>
+    </div>
+    <div class="content">
+        The Rest Of The Content
+        <!-- <div class="bubble" style="left: 100px; top: 100px;"></div> -->
+    </div>
+</body>
+</html>

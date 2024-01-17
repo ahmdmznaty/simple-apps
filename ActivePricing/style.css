@@ -1,0 +1,116 @@
+
+*{
+    padding: 0; margin: 0; font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw; height: 100vh; background-color: #eee;
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: center; align-items: center;
+}
+
+.pricing{
+    width: 660px; height: 500px;
+    display: flex; flex-direction: row; flex-wrap: wrap;
+    justify-content: space-between; align-items: center; gap: 10px;
+}
+
+.pricing .card{
+    width: 200px; height: 280px; background-color: #fff;
+    border-radius: 5px; cursor: pointer;
+    overflow: hidden; transition: all 0.3s;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.pricing .card:hover{
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.08);
+}
+.pricing .card h3{
+    width: 100%; height: 60px;
+    background-color: #00cfef;
+    color: white; font-size: 26px;
+    text-align: center; line-height: 60px;
+    transition: all 0.3s;
+}
+.pricing .card:hover h3{
+    background-color: #00a3bc;
+}
+.pricing .card .price{
+    width: 100%; height: 120px; color: #555;
+    display: flex; flex-direction: column; flex-wrap: nowrap;
+    justify-content: center; align-items: center; gap: 0px;
+    transition: all 0.3s;
+}
+.pricing .card .price span:first-child{
+    font-size: 50px; font-weight: bolder;
+}
+.pricing .card .price span:last-child{
+    font-size: 18px; font-weight: lighter;
+}
+.pricing .card:hover .price{
+    color: #00a3bc;
+}
+.pricing .card .details{
+    width: 70%; height: 7px; background-color: #dfdfdf;
+    margin: 5px auto; border-radius: 2px; position: relative;
+    filter: drop-shadow(0 36px 0 #dfdfdf);
+}
+.pricing .card .details::before{
+    content: ""; width: 80%; height: 100%;
+    position: absolute; left: 10%; top: 18px;
+    background-color: #dfdfdf;
+    border-radius: 2px;
+}
+
+.pricing .features{
+    width: 100%; height: 200px; background-color: #fff;
+    margin-top: 20px; border-radius: 5px; padding: 20px;
+    display: flex; flex-direction: column; flex-wrap: nowrap;
+    justify-content: center; align-items: center; gap: 10px;
+}
+.pricing .features .feature{
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column; flex-wrap: nowrap;
+    justify-content: center; align-items: center; gap: 10px;
+}
+.pricing .features .feature p{
+    width: 100%; color: #555; font-size: 18px;
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: space-between; align-items: center;
+}
+.pricing .features .feature .progress{
+    width: 100%; height: 15px; background-color: #ddd;
+    border-radius: 15px; overflow: hidden; position: relative;
+}
+.pricing .features .feature .progress::before{
+    content: ""; width: 0%; height: 100%;
+    background-color: #00cfef; transition: all 0.3s;
+    position: absolute; left: 0; top: 0;
+}
+
+.pricing .card.basic:hover ~  .features .feature .progress::before{
+    width: 5%;
+}
+
+.pricing .card.pro:hover ~  .features .feature.users .progress::before{
+    width: 20%;
+}
+.pricing .card.pro:hover ~  .features .feature.storage .progress::before{
+    width: 60%;
+}
+.pricing .card.pro:hover ~  .features .feature.projects .progress::before{
+    width: 50%;
+}
+
+.pricing .card.premium:hover ~  .features .feature.users .progress::before{
+    width: 100%;
+}
+.pricing .card.premium:hover ~  .features .feature.storage .progress::before{
+    width: 100%;
+}
+.pricing .card.premium:hover ~  .features .feature.projects .progress::before{
+    width: 100%;
+}
+
+

@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Countries Toggle</title>
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu()">
+        <img class="arrow" src="media/arrow.png" style="transform: rotateX(0deg);">
+        <div class="default"> <img src="media/countries.png"> <span>Choose a country</span> </div>
+        <div class="others closed">
+            <div class="option" onclick="choose('Algeria')"> <img src="media/Algeria.png"> <span>Algeria</span> </div>
+            <div class="option" onclick="choose('Brazil')"> <img src="media/Brazil.png"> <span>Brazil</span> </div>
+            <div class="option" onclick="choose('Canada')"> <img src="media/Canada.png"> <span>Canada</span> </div>
+            <div class="option" onclick="choose('China')"> <img src="media/China.png"> <span>China</span> </div>
+            <div class="option" onclick="choose('Egypt')"> <img src="media/Egypt.png"> <span>Egypt</span> </div>
+            <div class="option last" onclick="choose('Japan')"> <img src="media/Japan.png"> <span>Japan</span> </div>
+        </div>
+    </div>
+</body>
+</html>

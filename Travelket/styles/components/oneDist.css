@@ -1,0 +1,226 @@
+/* •••••••••••••••••••••••••••••••••••••••••••••••••• */
+/* ••••• The full oneDist and black area styles ••••• */
+/* •••••••••••••••••••••••••••••••••••••••••••••••••• */
+.blackArea{
+    width: 100%; height: 100%;
+    position: fixed; right: 0; top: 0;
+    background-color: #181817cd;
+    transform-origin: 100% 100%;
+    transform: scaleX(0) scaleY(1);
+    transition: all 0.3s;
+    z-index: 101;
+}
+.blackArea.active{
+    transform: scaleX(1) scaleY(1);
+}
+/* ••••••••••••••••••••••••••••••••••••••••••••••••• */
+/* •••••••••••• The main oneDist styles •••••••••••• */
+/* ••••••••••••••••••••••••••••••••••••••••••••••••• */
+#oneDist{
+    width: 420px; height: 100%;
+    background-color: white;
+    border-radius: 25px 0 0 25px;
+    box-shadow: -5px 0 17px 0 rgba(0, 0, 0, 0.4);
+    position: fixed; right: 0%; top: 0; z-index: 100;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+#oneDist .popular{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 30px;
+    font-family: webket;
+    font-size: 15px;
+    font-weight: 500;
+    color: hsl(211deg 35% 26%);
+}
+#oneDist .map{
+    width: 94%;
+    height: 35%;
+    border-radius: 5px;
+    box-shadow: 0 0px 2px 0px rgba(0, 2, 6, 0.3);
+    margin-top: 25px;
+}
+#oneDist .mediam{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+#oneDist .mediam .top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 12px;
+}
+#oneDist .mediam .top h2{
+    font-size: 22px;
+    font-weight: 550;
+    font-family: webket;
+}
+#oneDist .mediam .top .weather{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#oneDist .mediam .top .weather p{
+    font-size: 13px;
+    margin-left: 1px;
+}
+#oneDist .mediam .top .weather .cloud{
+    font-size: 22px;
+    color:hsl(0deg 0% 66%);
+}
+
+#oneDist .mediam  .center{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3%;; 
+    padding-right: 3%;
+}
+#oneDist .mediam  .center p{
+    font-size: 18px;
+    font-weight: 100;
+    color:hsl(0deg 0% 66%);
+}
+#oneDist .mediam  .center .allowed{
+    display: flex;
+}
+#oneDist .mediam  .center .allowed p{
+    color:hsl(148deg 57% 39%) ;
+    font-size: 10px;
+}
+
+#oneDist .mediam  .center .arrow{
+    font-size: 11px;
+    color:hsl(148deg 57% 39%);
+}
+#oneDist .mediam .low {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 12px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#oneDist .mediam .low button{
+    width: 190px;
+    height: 42px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 28px;
+    border: 0;
+    box-shadow: 0 1px 3px 0px rgba(0, 2, 6, 0.3);
+    cursor: pointer;
+
+}
+#oneDist .mediam .low .mark{
+    background-color: hsl(218deg 92% 53%);
+    color:  hsl(215deg 100% 93%);
+    font-weight: webket;
+    transition: all 0.3s;
+}
+#oneDist .mediam .low .mark:hover{
+    background-color: hsl(215deg 100% 93%);
+    color:  hsl(218deg 92% 53%);
+
+}
+
+#oneDist .mediam .low .see{
+    color:  hsl(218deg 92% 53%);
+    background-color: hsl(215deg 100% 93%);
+    font-weight: webket;   
+    transition: all .3s;
+}
+#oneDist .mediam .low .see:hover{
+    color:white ;
+    background-color: hsl(218deg 92% 53%) ;
+}
+
+#oneDist .bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+#oneDist .bottom>h3{
+    margin-left: 22px;
+    margin-top: 10px;
+    font-family: webket;
+    font-size: 20px; margin: 25px;
+}
+#oneDist .seemore{
+    width: 170px;
+    height: 30px;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 1px 3px 0px rgba(0, 2, 6, 0.3);
+    position: absolute;
+    font-size: 12px;
+    font-family: webket;
+    color:hsl(0deg 0% 42%);
+    bottom: 25px;
+    cursor: pointer;
+    transition: all .3s;
+}
+#oneDist .seemore:hover{
+    color: white;
+    background-color:hsl(0deg 0% 42%) ;
+}
+
+#oneDist .x{
+    width: 35px;
+    height:35px;
+    position: absolute;
+    top:  20px;
+    left: 3%;
+    background-color: white;
+    box-shadow: 0 1px 6px 0px rgba(0, 2, 6, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#oneDist .x .close{
+    font-size: 20px;
+    color:hsl(0deg 0% 66%);
+}
+#oneDist .x .close:hover{
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+

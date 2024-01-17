@@ -1,0 +1,51 @@
+/* ••••••••••••••••••••••••••••••••••••••••••••••••• */
+/* •••••••••••••• The main nav styles •••••••••••••• */
+/* ••••••••••••••••••••••••••••••••••••••••••••••••• */
+.nav{
+    width: 80px; height: 100%;
+    position: fixed; left: 0; top: 0;
+    border-right: 1px solid #ddd;
+    display: flex; flex-direction: column;
+    flex-wrap: nowrap; justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.nav .navTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+}
+.nav .navTop span.logo{
+    width: 50px;
+    height: 50px;
+    background-color: #1878fc;
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.nav .navTop ion-icon{
+    font-size: 30px;
+    color: #a7a7a7;
+    cursor: pointer;
+    transition: .2s;
+}
+.nav .navTop ion-icon:hover{
+    color: #030303;
+}
+.nav .navTop ion-icon.active{
+    color: #030303;
+}
+.nav .navBottom{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: -30px;
+    object-fit: cover;
+    cursor: pointer;
+}

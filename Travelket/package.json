@@ -1,0 +1,11 @@
+{
+  "name": "travelket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev"
+  },
+  "author": "webket",
+  "license": "ISC"
+}

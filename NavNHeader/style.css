@@ -1,0 +1,195 @@
+
+body{ background: #ededed; }
+*{ margin: 0; padding: 0; }
+
+
+
+
+.nav{
+    width: 100%; height: 65px;
+    background-color: white;
+    box-sizing: border-box; padding: 0 80px;
+    position: fixed; left: 0; top: 0;
+    z-index: 10;
+    display: flex; flex-wrap: nowrap;
+    flex-direction: row; align-items: center;
+    justify-content: space-between;
+}
+.nav .menuBu{
+    display: none;
+}
+.nav .navLeft{
+    width: 150px; height: 100%;
+    font: bold 22px/65px sans-serif;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+.nav .navLeft span{ position: relative; z-index: 11; }
+.nav .navLeft::before{
+    content: "";
+    width: 110px; aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #2761f7;
+    position: absolute;
+    left: 0; top: -20px;
+    z-index: 10;
+}
+.nav .navLeft::after{
+    content: "";
+    width: 110px; aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #fb4c42;
+    position: absolute;
+    left: 30px; top: -20px;
+    z-index: 9;
+}
+.nav .navRight{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+.nav .navRight .navBu{
+    display: block;
+    height: 40px; margin: 0 10px;
+    color: black;
+    text-align: center;
+    font: 18px/40px sans-serif;
+    text-decoration: none;
+    position: relative;
+}
+.nav .navRight .navBu::before{
+    content: "";
+    width: 0; height: 4px;
+    background-color: #fb4c42;
+    position: absolute; left: 0;
+    bottom: 0; transition: width 0.3s;
+}
+.nav .navRight .navBu:hover::before{ width: 75%; }
+
+.nav .navRight .active{ color: #fb4c42; }
+.nav .navRight .active::before{
+    content: "";
+    width: 75%; height: 4px;
+    background-color: #fb4c42;
+    position: absolute; left: 0;
+    bottom: 0; transition: width 0.3s;
+}
+
+.nav .navRight .login{
+    padding: 0 22px;
+    background-color: #2761f7;
+    border-radius: 4px;
+    color: white;
+    transition: all 0.3s;
+}
+.nav .navRight .login:hover{
+    background-color: white;
+    color: #2761f7;
+    box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.2);
+}
+.nav .navRight .login:hover::before{ width: 0%; }
+
+
+
+
+
+
+.section1{
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    margin-top: 65px;
+    padding: 80px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section1>img{ width: 400px; }
+.section1>div{ max-width: 400px; }
+.section1>div h2{
+    font: bold 38px/1.2 sans-serif;
+    padding-top: 20px;
+}
+.section1>div p{
+    font: 17px sans-serif;
+    padding: 20px 0 30px 5px;
+    color: #666;
+}
+.section1>div a{
+    display: inline-block;
+    height: 45px; width: 180px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font: 18px/45px sans-serif;
+    background-color: #2761f7;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+.section1>div a:hover{
+    background-color: white;
+    color: #2761f7;
+    box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .nav .navRight{
+        right: -300px;
+        flex-direction: column;
+        width: 300px; height: 100%;
+        position: fixed; top: 0;
+        background-color: white;
+        box-shadow: 0 -3px 14px 0 rgba(0, 0, 0, 0.2);
+        transition: right 0.3s;
+    }
+    .nav .navRight::before{
+        content: ""; height: 100%;
+        width: calc(100% - 300px);
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed; right: 0; top: 0;
+        z-index: 15; opacity: 0%;
+        transition: all 0.3s;
+    }
+    .nav>input:checked + .navRight{ right: 0; }
+    .nav>input:checked + .navRight::before{ right: 300px; opacity: 100%; }
+    .nav>input:checked + .navRight .navBu{ width: 70%; margin: 10px 0; }
+    .nav>input:checked + .navRight .active::before{ width: 100%; }
+
+    .nav .menuBu{
+        display: block;
+        font-size: 35px;
+        position: fixed;
+        top: 15px; right: 45px;
+        z-index: 20;
+        cursor: pointer;
+    }
+
+
+    .section1{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
