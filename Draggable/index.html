@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Draggable</title>
+  <style>
+    .empty{
+      display: inline-block;
+      height: 100px; width: 100px;
+      margin: 10px;
+      border: 4px solid #ffde59;
+      background-color: #ffffff;
+    }
+    .fill{
+      cursor: pointer;
+      height: 100px; width: 100px;
+      background-color: #ffde59;
+    }
+    .lift{border:4px solid #000;}
+    .hovering{border-style: dashed;}
+    .invisible{display: none;}
+  </style>
+</head>
+<body>
+  <div style="text-align: center; margin-top: 230px;">
+    <div class="empty">
+      <div class="fill" draggable="true"></div>
+    </div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+  </div>
+
+  <script>
+    let fill = document.querySelector('.fill');
+    let entries = document.querySelectorAll('.empty');
+
+    fill.addEventListener('dragstart', dragStart);
+    fill.addEventListener('dragend', dragEnd);
+
+    function dragStart(){
+      this.className += ' lift';
+      setTimeout(() => {this.className = 'invisible'}, 0);
+    }
+
+    function dragEnd(){
+      this.className = 'fill';
+    }
+
+    for(let entry of entries){
+      entry.addEventListener('dragover', dragOver);
+      entry.addEventListener('dragenter', dragEnter);
+      entry.addEventListener('dragleave', dragLeave);
+      entry.addEventListener('drop', dragDrop);
+    }
+
+    function dragOver(e){e.preventDefault();}
+    function dragEnter(e){
+      e.preventDefault();
+      this.className += ' hovering';
+    }
+    function dragLeave(){this.className = "empty";}
+    function dragDrop(){
+      this.className = "empty";
+      this.append(fill);
+    }
+  </script>
+</body>
+</html>

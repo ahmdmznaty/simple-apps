@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>New</title>
+  <style>
+    div{
+      margin: 200px auto;
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      background: conic-gradient( #F0E7FE 0% 25%, #6683EB 25% 70%, #4F1E97 70% 90%, #0000ff 90% 100% );
+      position: relative;
+    }
+    div::after{
+      content: "";
+      width:  190px;
+      height: 190px;
+      background-color: white;
+      display: block;
+      border-radius: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>upload image</title>
+    <style>
+        #body{
+            width: calc(100% - 100px); padding: 50px;
+            display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center;
+            background-color: rgb(241, 241, 241);
+        }
+        img{
+            width: 200px; height: 200px; margin: 15px; padding: 4px;
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0px 0px 10px 0px #000;
+            object-fit: cover; cursor: pointer;
+            transition: all 0.1s;
+        }
+        #upload{ display: none; }
+        #upload_button{
+            display: block; width:  55px; height: 55px; border-radius: 50%;
+            position: fixed; bottom: 40px; right:  40px;
+            background-color: rgb(248, 248, 248);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+            font-size: 45px; color: rgb(51, 51, 51); text-align: center; line-height: 55px; font-weight: bolder;
+            transition: transform 0.1s; cursor: pointer;
+        }
+        #upload_button:hover{
+            transform: scale(1.1);
+            background-color: rgb(235, 235, 235);
+            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    
+    <label for="upload" id="upload_button"> + </label>
+    <input id="upload" type="file" onChange="handleImageUpload()" multiple/>
+    <div id="body"> </div>
+
+    <script>
+        function handleImageUpload() {
+            var image = document.getElementById("upload").files;
+            let mydiv = document.getElementById("body");
+            for(let i = 0; i < image.length; i++){
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    let img = document.createElement("img");
+                    document.getElementById("body").appendChild(img);
+                    img.src =  e.target.result;
+                    img.setAttribute("onclick", "clicked('" + image[i].name + "')");
+                    img.setAttribute("id", image[i].name);
+                    img.style.width = "200px";
+                    img.style.height = "200px";
+                }
+                reader.readAsDataURL(image[i]);
+            }
+        }
+        function clicked(x){
+            console.log(x + " Clicked");
+            let mywidth = document.getElementById(x).style.width;
+            if(mywidth == "200px"){
+                document.getElementById(x).style.position = "fixed";
+                document.getElementById(x).style.width = "calc(100% - 48px)";
+                document.getElementById(x).style.height = "calc(100% - 48px)";
+                document.getElementById(x).style.objectFit = "contain";
+                document.getElementById(x).style.top = "0px";
+                document.getElementById(x).style.left = "0px";
+            }
+            else if(mywidth == "calc(100% - 48px)"){
+                document.getElementById(x).style.width = "200px";
+                document.getElementById(x).style.height = "200px";
+                document.getElementById(x).style.objectFit = "cover";
+                document.getElementById(x).style.position = "static";
+            }
+        }
+    </script>
+</body>
+</html>
